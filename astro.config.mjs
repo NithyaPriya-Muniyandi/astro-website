@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
    output: 'static',
    base: '/test/',
+   site: "https://github.com/NithyaPriya-Muniyandi/Astro-website.github.io",
    prefetch: {
   prefetchAll: true
 },
