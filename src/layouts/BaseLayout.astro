@@ -1,0 +1,159 @@
+---
+import logo from './../assets/logo-gd.webp';
+import FooterLogo from './../assets/footer-logo.webp';
+import LinkedinLogo from './../assets/linkedin.webp';
+import WhatsAppIcon from './../assets/whatsapp.webp';
+import RegisterIcon from './../assets/register.webp';
+import LoginIcon from './../assets/login.webp';
+const currentYear = new Date().getFullYear();
+const { title = 'Global Dynamic Talent Solution' ,  description = "Global Dynamic Talent Solution is your trusted partner for staffing, recruitment, and career solutions." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Global Dynamic Talent Solution is your trusted partner for recruitment, staffing, and career development." />
+		<link rel="icon" type="image/webp" href="favicon.webp" />
+     <meta name="generator" content={Astro.generator} />
+     <meta name="turbo-cache-control" content="no-preview" />
+		 <title>{title}</title>
+    <link rel="preload" as="image" href="../assets/gdts-banner-mb.webp"/>
+	</head>
+	 <body class="bg-white text-gray-900 font-poppins">
+    <!-- Top Links Bar (Scrolls with the page) -->
+<div class="bg-gray-800 text-sm text-gray-100 py-2 px-4 md:px-20 flex justify-end items-center space-x-6">
+  <!-- WhatsApp Icon Link -->
+ <a href="https://api.whatsapp.com/send?phone=918220782221&text=&source=&data=" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   title="Chat on WhatsApp" 
+   class="hover:opacity-80">
+  <img src={WhatsAppIcon.src} alt="WhatsApp" class="w-5 h-5" />
+</a>
+
+  <!-- Register & Login -->
+  <a href="https://gdtsolution.com/wp-login.php" class="flex items-center space-x-1 hover:text-yellow-500">
+    <img src={RegisterIcon.src} alt="Register" class="w-4 h-4" />
+    <span>Register</span>
+  </a>
+
+  <!-- Login Link -->
+  <a href="https://gdtsolution.com/wp-login.php?action=register" class="flex items-center space-x-1 hover:text-yellow-500">
+    <img src={LoginIcon.src} alt="Login" class="w-4 h-4" />
+    <span>Login</span>
+  </a>
+</div>
+
+
+   <header class="sticky top-0 z-50 bg-white text-black p-4 shadow" x-data="{ open: false }">
+  <div class="max-full-w mx-auto flex justify-between items-center md:px-20">
+    <a href="/">
+      <img src={logo.src} alt="AstroSite Logo" class="h-14 w-auto" />
+    </a>
+
+    <!-- Hamburger Icon (visible on small screens only) -->
+    <button @click="open = !open" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+    <!-- Navigation (hidden on small screens, visible on md and above) -->
+   <nav class="hidden md:flex space-x-10">
+  <a href="/test/" class="hover:text-[#fabf0e]">Home</a>
+  <a href="/test/about"  data-turbo="true" class="hover:text-[#fabf0e]">About Us</a>
+  <a href="/test/job" class="hover:text-[#fabf0e]">Jobs</a>
+  <a href="/test/service" class="hover:text-[#fabf0e]">Services</a>
+  <a href="/test/faqs" class="hover:text-[#fabf0e]">FAQs</a>
+  <a href="/test/contact" class="hover:text-[#fabf0e]">Contact Us</a>
+</nav>
+  </div>
+
+  <!-- Mobile Nav Menu (offcanvas style) -->
+  <div
+    class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg p-6 z-50 transform transition-transform duration-300"
+    :class="{ 'translate-x-0': open, 'translate-x-full': !open }"
+  >
+    <button @click="open = false" class="text-xl mb-4 float-right">✕</button>
+    <nav class="flex flex-col space-y-4 mt-10">
+      <a href="/test/" class="hover:text-[#fabf0e]">Home</a>
+      <a href="/test/about" class="hover:text-[#fabf0e]">About Us</a>
+	  <a href="/test/job" class="hover:text-[#fabf0e]">Jobs</a>
+	  <a href="/test/service" class="hover:text-[#fabf0e]">Services</a>
+	  <a href="/test/faqs" class="hover:text-[#fabf0e]">FAQs</a>
+	  <a href="/test/contact" class="hover:text-[#fabf0e]">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+    <main class="max-w mx-auto">
+      <slot />
+    </main>
+
+	   <footer>
+		<section class="bg-[#2b2b2b] text-[#d5d5d5] py-10">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="flex flex-col md:flex-col justify-between items-center">
+					<div class="mb-6 md:mb-0">
+						<img src={FooterLogo.src} alt="Logo" class="h-auto w-auto" />
+					</div>
+					<div class="text-center md:text-left pt-5">
+						<div class="grid grid-cols-3 md:flex md:justify-start gap-x-4 gap-y-2 text-left">
+  <a href="/test/about" class="hover:text-blue-400">&rarr; About Us</a>
+  <a href="/test/job" class="hover:text-blue-400">&rarr; Jobs</a>
+  <a href="/test/service" class="hover:text-blue-400">&rarr; Services</a>
+  <a href="/test/faqs" class="hover:text-blue-400">&rarr; FAQs</a>
+  <a href="/test/contact" class="hover:text-blue-400">&rarr; Contact Us</a>
+  <a href="/test/login" class="hover:text-blue-400">&rarr; Login</a>
+  <a href="/test/register" class="hover:text-blue-400">&rarr; Register</a>
+  <a href="/test/privacy" class="hover:text-blue-400">&rarr; Privacy Policy</a>
+</div>
+
+						   <div class="mt-6 flex justify-center">
+         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Visit our LinkedIn">
+            <img src={LinkedinLogo.src} alt="LinkedIn" class="h-12 w-12" loading="lazy" />
+          </a>
+        </div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<div class="bg-[#1b1a1a] text-[#d5d5d5] text-center p-4 text-sm">
+  © {currentYear}. Global Dynamic Talent Solutions. All Rights Reserved
+</div>
+    </footer>
+
+  <button 
+      id="backToTopBtn"
+      class="fixed bottom-6 right-6 z-50 hidden bg-[#fabf0e] text-black px-4 py-2 rounded-full shadow-md hover:bg-yellow-400 transition-opacity"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑ Top
+    </button>
+
+   <script is:inline>
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTopBtn');
+    if (btn) {
+      if (window.scrollY > 300) {
+        btn.classList.remove('hidden');
+      } else {
+        btn.classList.add('hidden');
+      }
+    }
+  });
+</script>
+
+  </body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden; 
+		 font-family: 'Poppins', sans-serif;
+	}
+</style>

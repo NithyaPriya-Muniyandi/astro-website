@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import privacy from '../assets/privacy.webp';
+---
+<BaseLayout title="Job - Global Dynamic Talent Solution">
+     <section
+    class="relative bg-cover bg-center bg-no-repeat min-h-[300px] flex items-center"
+    style={`background-image: url(${privacy.src});`}
+  >
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/5 z-0"></div>
+
+    <!-- Content -->
+    <div class="container relative z-10 mx-auto px-4">
+      <div class="max-w-lg text-white mt-35 mb-20 md:my-40 md:pl-30">
+        <h1 class="text-2xl md:text-5xl font-bold mb-4 border-l-4 border-yellow-400 pl-4 rounded-lg">Opening Jobs</h1>
+         <hr class="border-t border-gray-500 mb-6 w-[90%]" />
+       
+      </div>
+    </div>
+  </section>
+  </BaseLayout>

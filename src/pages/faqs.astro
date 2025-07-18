@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import faq from '../assets/faq.webp';
+
+const faqs = [
+  {
+    question: "What industries does Global Dynamic Talent Solution specialise in?",
+    answer:
+      "We specialise in staffing for healthcare, IT, administration, education, and skilled trades, with placements in India, Guyana, and beyond.",
+  },
+  {
+    question: "How can I apply for a job through Global Dynamic Talent Solution?",
+    answer:
+      "Visit our job listings section, choose a role that fits your skills, and click “Apply Now.” You can also upload your CV directly on our homepage.",
+  },
+  {
+    question: "Do you charge candidates for placements?",
+    answer:
+      "No, our services are completely free for job seekers. We’re here to help you find the right opportunity without hidden fees.",
+  },
+  {
+    question: "How do I submit my resume?",
+    answer: `
+      You can log in or register and create your profile. You can upload your resume/CV in a Word <code>.docx</code> format.<br />
+      <a
+        href="https://gdtsolution.com/upload-your-cv/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+      >
+        UPLOAD YOUR CV
+      </a>
+    `
+  },
+  {
+    question: "What if there are no openings that interest me?",
+    answer:
+      "You can submit your resumé to be registered in our Careers database and receive automatic email notices of job openings that match your skills.",
+  },
+{
+  question: "I have trouble resetting my password",
+  answer: `
+    <strong>On your computer, you can reset your password by following the steps below:</strong><br/>
+    Click the 
+    <a 
+      href="https://gdtsolution.com/wp-login.php?action=lostpassword" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="text-blue-600 underline hover:text-blue-800 transition"
+    >
+      Reset Password
+    </a> 
+    link.<br/>
+    Enter the same email address you used when creating your GDTS profile.<br/>
+    Click the Submit button.
+  `
+}
+];
+---
+<BaseLayout title="FAQ - Global Dynamic Talent Solution">
+<section
+    class="relative bg-cover bg-center bg-no-repeat min-h-[300px] flex items-center"
+    style={`background-image: url(${faq.src});`}
+  >
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/5 z-0"></div>
+
+    <!-- Content -->
+    <div class="container relative z-10 mx-auto px-4">
+      <div class="max-w-lg text-white mt-35 mb-20 md:my-40 md:pl-30">
+        <h1 class="text-2xl md:text-5xl font-bold mb-4 border-l-4 border-yellow-400 pl-4 rounded-lg">FAQs</h1>
+         <hr class="border-t border-gray-500 mb-6 w-[90%]" />
+        <p class="text-lg md:text-xl font-black">
+          Below are some of the most commonly asked questions.  
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section -->
+
+
+<section class="bg-[#f5f5f5] py-10 md:py-20 px-4">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6 items-middle">
+    
+    <!-- Left Side Card (1/4 width) -->
+    <div class="bg-[#328eed] text-white p-6 md:col-span-1 align-middle rounded-md shadow-md">
+      <h3 class="text-xl md:text-2xl md:leading-relaxed mb-2">
+        We hope you find what you’re looking for. Else, you are welcome to contact our client services directly.
+      </h3>
+    </div>
+
+    <!-- Right Side FAQ (3/4 width) -->
+    <div class="text-left md:col-span-3" id="faq-accordion">
+      {faqs.map((faq, index) => (
+        <details
+          class={`group border-t transition-all ${index === faqs.length - 1 ? 'border-b' : ''} border-[#328eed]`}
+        >
+          <summary
+            class="text-[#292929] cursor-pointer flex justify-between items-center px-2 py-4 hover:bg-[#328eed]/10 group-open:bg-[#328eed]/10 group-open:text-[#328eed] transition-colors duration-300"
+          >
+            <span>{faq.question}</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <div class="faq-answer text-gray-700 leading-relaxed p-4"  set:html={faq.answer}></div>
+        </details>
+      ))}
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const detailsList = document.querySelectorAll("details");
+      detailsList.forEach((detailEl) => {
+        const detail = detailEl;
+        detail.addEventListener("toggle", () => {
+          if (detail.open) {
+            detailsList.forEach((otherEl) => {
+              if (otherEl !== detail) otherEl.removeAttribute("open");
+            });
+          }
+        });
+      });
+    });
+  </script>
+</section>
+
+</BaseLayout>

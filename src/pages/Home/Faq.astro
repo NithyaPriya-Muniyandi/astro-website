@@ -1,0 +1,94 @@
+---
+import '../../styles/global.css';
+
+const faqs = [
+  {
+    question: "What industries does Global Dynamic Talent Solution specialise in?",
+    answer:
+      "We specialise in staffing for healthcare, IT, administration, education, and skilled trades, with placements in India, Guyana, and beyond.",
+  },
+  {
+    question: "How can I apply for a job through Global Dynamic Talent Solution?",
+    answer:
+      "Visit our job listings section, choose a role that fits your skills, and click “Apply Now.” You can also upload your CV directly on our homepage.",
+  },
+  {
+    question: "Do you charge candidates for placements?",
+    answer:
+      "No, our services are completely free for job seekers. We’re here to help you find the right opportunity without hidden fees.",
+  },
+  {
+    question: "How long does it take to get hired?",
+    answer:
+      "Timelines vary depending on the role and employer requirements. However, our team works proactively to match qualified candidates quickly and efficiently.",
+  },
+  {
+    question: "Can employers request custom recruitment services?",
+    answer:
+      "Absolutely! We offer tailored recruitment solutions based on your industry, location, and hiring goals. Contact us to discuss your needs.",
+  },
+  {
+    question: "I uploaded my CV. What happens next?",
+    answer:
+      "Our team will check out your profile and contact you if there’s a suitable match. You may also receive job alerts tailored to your skills.",
+  },
+  {
+    question: "Do you offer international job placements?",
+    answer:
+      "Yes, based on their qualifications, we help candidates explore international opportunities, particularly between India and the Caribbean region.",
+  },
+];
+---
+<section class="mx-auto md:w-8xl text-center py-10 md:py-20 px-4 bg-[#f5f5f5]">
+  <h2 class="text-2xl md:text-4xl font-bold mb-10">Frequently Asked Questions</h2>
+
+  <div class="max-w-7xl mx-auto text-left" id="faq-accordion">
+    {faqs.map((faq, index) => (
+      <details
+        class={`group border-t transition-all ${
+          index === faqs.length - 1 ? 'border-b' : ''
+        } border-[#328eed]`}
+      >
+        <summary
+          class="text-[#292929] cursor-pointer flex justify-between items-center px-2 py-4
+                 hover:bg-[#328eed]/10 group-open:bg-[#328eed]/10 group-open:text-[#328eed] transition-colors duration-300"
+        >
+          <span>{faq.question}</span>
+          <svg
+            class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+        <p class="my-5 text-gray-700 leading-relaxed">{faq.answer}</p>
+      </details>
+    ))}
+  </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const detailsList = document.querySelectorAll("details");
+
+    detailsList.forEach((detailEl) => {
+      const detail = detailEl as HTMLDetailsElement;
+
+      detail.addEventListener("toggle", () => {
+        if (detail.open) {
+          detailsList.forEach((otherEl) => {
+            const other = otherEl as HTMLDetailsElement;
+            if (other !== detail) other.removeAttribute("open");
+          });
+        }
+      });
+    });
+  });
+</script>
+
+</section>

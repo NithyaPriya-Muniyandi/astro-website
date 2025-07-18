@@ -1,0 +1,46 @@
+---
+import '../../styles/global.css';
+import arrow from '../../assets/right-arrow.webp';
+
+const jobCards = [
+  { title: "Healthcare Advisor", description: "Coimbatore", url: "https://gdtsolution.com/job/healthcare-advisor/" },
+  { title: "Tele callers", description: "Coimbatore", url: "https://gdtsolution.com/job/tele-callers/" },
+  { title: "Academic Counsellor", description: "Coimbatore", url: "https://gdtsolution.com/job/academic-counsellor/" },
+  { title: "Sales & Marketing Executives", description: "Coimbatore", url: "https://gdtsolution.com/job/sales-marketing-executives/" },
+  { title: "Academic Coordinator", description: "Coimbatore", url: "https://gdtsolution.com/job/academic-coordinator/" },
+  { title: "All Round Operator", description: "Guyana", url: "https://gdtsolution.com/job/all-round-operator/" },
+  { title: "HSSE Manager", description: "Guyana", url: "https://gdtsolution.com/job/hsse-manager/" },
+  { title: "Asphalt Paver Operator", description: "Guyana", url: "https://gdtsolution.com/job/asphalt-paver-operator/" },
+  { title: "Senior Civil Engineer", description: "Guyana", url: "https://gdtsolution.com/job/senior-civil-engineer/" },
+  { title: "Workshop Manager", description: "Guyana", url: "https://gdtsolution.com/job/workshop-manager/" },
+  { title: "Drill Operator", description: "Guyana", url: "https://gdtsolution.com/job/drill-operator/" },
+  { title: "Crusher Welder", description: "Guyana", url: "https://gdtsolution.com/job/crusher-welder/" },
+];
+---
+<section class="mx-auto md:w-8xl text-center py-10 md:py-20 px-4 bg-white text-[#292929]">
+  <h3 class="text-2xl md:text-4xl font-bold">Current Job Openings</h3>
+  <h4 class="text-lg md:text-xl my-3 max-w-2xl mx-auto leading-relaxed">
+    Explore our latest career opportunities across healthcare, wellness, constructions, mining, education and more.
+  </h4>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mx-auto max-w-7xl">
+    {jobCards.map((job) => (
+      <a href={job.url} class="block border border-[#e8e8e8] rounded-lg shadow-md p-6 text-left hover:shadow-lg transition-shadow duration-300 group">
+        <div class="flex justify-between items-start">
+          <div>
+            <h5 class="text-md font-semibold mb-2">{job.title}</h5>
+            <p class="text-sm text-gray-600">{job.description}</p>
+          </div>
+        <div class="h-10 w-14 border-[3px] border-yellow-200/50 rounded-md bg-yellow-400 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-200">
+  <img src={arrow.src} alt="Job Icon" class="h-6 w-6 object-contain" />
+</div>
+        </div>
+      </a>
+    ))}
+  </div>
+  <div class="mt-10">
+  <a href="https://gdtsolution.com/job-openings/" class="flex items-center gap-2 border-[3px] border-yellow-200/50 inline-block bg-yellow-400 px-6 py-3 rounded-md hover:bg-yellow-300 transition-colors duration-300">
+    Browse All Jobs
+  </a>
+</div>
+</section>

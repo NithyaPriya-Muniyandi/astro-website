@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import contact from '../assets/contact.webp';
+---
+<BaseLayout title="Contact - Global Dynamic Talent Solution">
+    <section
+    class="relative bg-cover bg-center bg-no-repeat min-h-[300px] flex items-center"
+    style={`background-image: url(${contact.src});`}
+  > 
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/5 z-0"></div>
+
+    <!-- Content -->
+    <div class="container relative z-10 mx-auto px-4">
+      <div class="max-w-lg text-white mt-35 mb-20 md:my-40 md:pl-30">
+        <h1 class="text-2xl md:text-5xl font-bold mb-4 border-l-4 border-yellow-400 pl-4 rounded-lg">Contact Us</h1>
+         <hr class="border-t border-gray-500 mb-6 w-[90%]" />
+        <p class="text-lg md:text-xl font-black">
+          we can help
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact form section -->
+   <section class="bg-white text-gray-800">
+  <div class="max-w-4xl mx-auto px-4 py-10 md:flex">
+    <!-- Left Side -->
+    <div class="md:w-1/2 bg-gray-100 p-6 rounded">
+      <!-- Get Social -->
+      <div>
+        <h2 class="text-xl md:text-2xl font-bold mb-4">Get Social</h2>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          class="inline-block text-[#0077b5] border-2 border-[#0077b5] p-3 rounded-full hover:bg-[#0077b5] hover:text-white transition"
+          aria-label="LinkedIn"
+        >
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 24h5V7H0v17zM7.5 7h4.8v2.56h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.74c0-1.84-.03-4.2-2.55-4.2-2.56 0-2.95 2-2.95 4.06V24h-5V7z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-xl md:text-2xl font-bold my-4">Contact Info</h2>
+       
+
+        <div class="space-y-6">
+  <!-- Location -->
+  <div class="flex items-start space-x-4">
+    <span class="p-3 rounded-full border-2 border-[#0077b5] text-[#0077b5]">
+      <!-- Location Icon -->
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M12 11.5a3 3 0 100-6 3 3 0 000 6z"></path>
+        <path d="M12 2C8 2 5 5.5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.5-3-7-7-7z"></path>
+      </svg>
+    </span>
+    <p class="text-sm leading-relaxed">
+      Meena High Rise building, 1st Floor,<br />
+      Door No – 110-113, T.V. Swamy Road (West),<br />
+      R.S. Puram, Coimbatore – 641002.<br />
+      Tamil Nadu, India.
+    </p>
+  </div>
+
+  <!-- Phone 1 -->
+ <div class="flex items-center space-x-4">
+  <span class="p-3 rounded-full border-2 border-[#0077b5] text-[#0077b5]">
+    <!-- Filled Phone Icon -->
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.54.57 1 1 0 011 1v3.5a1 1 0 01-1 1A16.92 16.92 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.54 1 1 0 01-.21 1.11l-2.2 2.2z" />
+    </svg>
+  </span>
+  <span class="text-sm">+0422 4724493</span>
+</div>
+
+
+  <!-- Phone 2 -->
+  <div class="flex items-center space-x-4">
+    <span class="p-3 rounded-full border-2 border-[#0077b5] text-[#0077b5]">
+      <!-- Phone Icon -->
+     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.54.57 1 1 0 011 1v3.5a1 1 0 01-1 1A16.92 16.92 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.54 1 1 0 01-.21 1.11l-2.2 2.2z" />
+    </svg>
+    </span>
+    <span class="text-sm">+91 95001 81783</span>
+  </div>
+
+  <!-- Phone 3 -->
+<div class="flex items-center space-x-4">
+  <span class="p-3 rounded-full border-2 border-[#0077b5] text-[#0077b5]">
+    <!-- WhatsApp Icon -->
+    <svg class="w-5 h-5" viewBox="0 0 32 32" fill="currentColor" stroke-width="3" viewBox="0 0 24 24">
+      <path d="M16.01 3.2A12.77 12.77 0 0 0 3.2 16c0 2.25.59 4.44 1.71 6.37L3 29l6.83-1.8a12.85 12.85 0 0 0 6.18 1.57c7.06 0 12.8-5.74 12.8-12.8S23.07 3.2 16.01 3.2zm0 23.36c-1.95 0-3.86-.54-5.52-1.56l-.39-.23-4.05 1.06 1.08-3.94-.25-.4a10.65 10.65 0 0 1-1.62-5.66c0-5.94 4.84-10.78 10.78-10.78s10.78 4.84 10.78 10.78-4.84 10.78-10.8 10.78z"/>
+      <path d="M22.02 19.79l-2.7-.77a.95.95 0 0 0-.9.25l-.94.97a8.42 8.42 0 0 1-4.01-3.56l1.01-.95c.26-.26.36-.63.26-.97l-.78-2.71a.97.97 0 0 0-.92-.67h-.8c-1.15 0-2.09.94-2.09 2.09 0 .31.07.62.2.9 1.07 2.44 3.01 4.54 5.39 5.83.63.35 1.34.54 2.06.54 1.15 0 2.09-.94 2.09-2.09v-.79c0-.43-.28-.82-.67-.94z"/>
+    </svg>
+  </span>
+  <span class="text-sm">+91 82207 82221</span>
+</div>
+
+
+  <!-- Email -->
+<div class="flex items-center space-x-4">
+  <span class="p-3 rounded-full border-2 border-[#0077b5] text-[#0077b5]">
+    <!-- Mail Icon -->
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+      <polyline points="22,6 12,13 2,6" />
+    </svg>
+  </span>
+  <a href="mailto:info@gdtsolution.com" class="text-sm hover:underline">info@gdtsolution.com</a>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="md:w-1/2 bg-[#1878b3] text-white p-6 mt-10 md:mt-0">
+      <h2 class="text-xl font-bold mb-6">Get in Touch with Us</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm mb-1" for="name">Your Name*</label>
+          <input type="text" id="name" class="w-full p-2 rounded text-black bg-white" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1" for="email">Your Email*</label>
+          <input type="email" id="email" class="w-full p-2 rounded text-black bg-white" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1" for="phone">Mobile Number*</label>
+          <input type="tel" id="phone" class="w-full p-2 rounded text-black bg-white" required />
+        </div>
+        <div>
+          <label class="block text-sm mb-1" for="message">Your Message (optional)</label>
+          <textarea id="message" class="w-full p-2 rounded text-black bg-white" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-2 rounded">
+          SUBMIT
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</BaseLayout>

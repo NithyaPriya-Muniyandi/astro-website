@@ -1,0 +1,280 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import service1 from '../assets/service1.webp';
+import service2 from '../assets/service2.webp';
+import service3 from '../assets/service3.webp';
+import service4 from '../assets/service4.webp';
+import service5 from '../assets/service5.webp';
+import service6 from '../assets/service6.webp';
+import reach from '../assets/reach.webp';
+import personalization from '../assets/personalization.webp';
+import recruitment from '../assets/recruitment.webp';
+import blockchain from '../assets/blockchain.webp';
+import handshake from '../assets/handshake.webp';   
+import service from '../assets/serviceimg.webp';
+---
+<BaseLayout title="Services - Global Dynamic Talent Solution">
+    <!-- banner -->
+    <section
+    class="relative bg-cover bg-center bg-no-repeat min-h-[300px] flex items-center"
+    style={`background-image: url(${service.src})`}
+  >
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/5 z-0"></div>
+
+    <!-- Content -->
+    <div class="container relative z-10 mx-auto px-4">
+      <div class="max-w-lg text-white mt-35 mb-20 md:my-40 md:pl-30">
+        <h1 class="text-2xl md:text-5xl font-bold mb-4 border-l-4 border-yellow-400 pl-4 rounded-lg">Services</h1>
+         <hr class="border-t border-gray-500 mb-6 w-[90%]" />
+        <p class="text-lg md:text-xl font-black">
+          Global Dynamic Talent Solutions is a Leading Manpower staffing and Talent solution Firm
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- Workforce -->
+<section class="bg-white py-10 md:py-20 px-4 text-[#292929] text-center">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">Comprehensive Workforce Solutions. Delivered Globally.</h2>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-center">At Global dynamic Talent solutions, we provide tailored staffing and recruitment services that help organizations hire right the first time and help professionals find roles where they can thrive. With a footprint in India, Guyana, and expanding markets, our services span multiple industries and hiring models.</p>
+</div>
+</section>
+
+<!-- service section -->
+
+<section class="bg-white pb-10 md:pb-20 px-4">
+  <div class="max-w-7xl mx-auto">
+   <div class="bg-white shadow-lg border-t-4 border-blue-500 rounded-lg grid md:grid-cols-4 gap-4 items-center mb-10 md:mb-20">
+  <!-- Content: 3/4 width on md+ -->
+  <div class="md:col-span-3 p-6 md:p-10">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">Permanent Staffing</h3>
+    <h4 class="text-base md:text-lg font-semibold mb-4">Build Long-Term Success with the Right People </h4>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-gray-700">
+      We specialize in identifying, screening, and placing top-tier candidates in long-term roles. Whether you’re scaling a team or filling critical leadership positions, our database and industry reach ensure quality hires. 
+    </p>
+    <h4 class="text-base md:text-lg font-semibold my-4">Industries Covered:</h4>
+    <ul class="flex flex-row flex-wrap gap-2 text-left text-sm md:text-base">
+      <li class="border border-gray-300 rounded px-4 py-2">Healthcare & Hospitals</li>
+      <li class="border border-gray-300 rounded px-4 py-2">IT & Software</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Education</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Administrative & Support Roles</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Finance & Consulting</li>
+    </ul>
+  </div>
+
+  <!-- Image: 1/4 width on md+ -->
+  <div class="md:col-span-1 hidden md:block h-full">
+    <img
+      src={service1.src}
+      alt="Service Image"
+      class="w-full h-full shadow-md object-cover rounded-tr-lg rounded-br-lg"
+    />
+  </div>
+</div>
+
+
+ <div class="bg-white shadow-lg border-t-4 border-yellow-500 rounded-lg grid md:grid-cols-4 gap-4 items-center mb-10 md:mb-20">
+     <!-- Image: 1/4 width on md+ -->
+  <div class="md:col-span-1 hidden md:block h-full">
+    <img
+      src={service2.src}
+      alt="Service Image"
+      class="w-full h-full shadow-md object-cover rounded-tr-lg rounded-br-lg"
+    />
+  </div>
+  <!-- Content: 3/4 width on md+ -->
+  <div class="md:col-span-3 p-6 md:p-10">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">Contract & Project-Based Hiring</h3>
+    <h4 class="text-base md:text-lg font-semibold mb-4">Flexible Talent On-Demand</h4>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-gray-700">
+      Do you need skilled professionals for short-term projects or seasonal demands? Our contract staffing services ensure you have on-demand expertise without long-term overheads. 
+    </p>
+    <h4 class="text-base md:text-lg font-semibold my-4">We help with: </h4>
+    <ul class="flex flex-row flex-wrap gap-2 text-left text-sm md:text-base">
+      <li class="border border-gray-300 rounded px-4 py-2">Maternity/Leave Replacements</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Project Deployments</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Startup Launches</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Remote/Hybrid Workforce Setup</li>
+    </ul>
+  </div>
+</div>
+
+ <div class="bg-white shadow-lg border-t-4 border-blue-500 rounded-lg grid md:grid-cols-4 gap-4 items-center mb-10 md:mb-20">
+  
+  <!-- Content: 3/4 width on md+ -->
+  <div class="md:col-span-3 p-6 md:p-10">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">International Recruitment</h3>
+    <h4 class="text-base md:text-lg font-semibold mb-4">Cross-Border Talent. Seamless Onboarding.</h4>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-gray-700">
+      With a strong recruitment base in India and the Caribbean, we help businesses tap into global talent pools. From healthcare professionals to tech experts, we manage visa documentation, candidate screening, and remote onboarding. 
+    </p>
+    <h4 class="text-base md:text-lg font-semibold my-4">Key Destinations:</h4>
+    <ul class="flex flex-row flex-wrap gap-2 text-left text-sm md:text-base">
+      <li class="border border-gray-300 rounded px-4 py-2">Guyana</li>
+      <li class="border border-gray-300 rounded px-4 py-2">India</li>
+      <li class="border border-gray-300 rounded px-4 py-2">The Caribbean Region</li>
+      <li class="border border-gray-300 rounded px-4 py-2">U.S. (select partnerships)</li>
+    </ul>
+  </div>
+
+     <!-- Image: 1/4 width on md+ -->
+  <div class="md:col-span-1 hidden md:block h-full">
+    <img
+      src={service3.src}
+      alt="Service Image"
+      class="w-full h-full shadow-md object-cover rounded-tr-lg rounded-br-lg"
+    />
+  </div>
+</div>
+
+ <div class="bg-white shadow-lg border-t-4 border-yellow-500 rounded-lg grid md:grid-cols-4 gap-4 items-center mb-10 md:mb-20">
+     <!-- Image: 1/4 width on md+ -->
+  <div class="md:col-span-1 hidden md:block h-full">
+    <img
+      src={service4.src}
+      alt="Service Image"
+      class="w-full h-full shadow-md object-cover rounded-tr-lg rounded-br-lg"
+    />
+  </div>
+  <!-- Content: 3/4 width on md+ -->
+  <div class="md:col-span-3 p-6 md:p-10">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">Healthcare Recruitment Solutions</h3>
+    <h4 class="text-base md:text-lg font-semibold mb-4">Your Partner in Hiring Frontline Heroes </h4>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-gray-700">
+      We work closely with hospitals, clinics, and health ministries to recruit nurses, doctors, technicians, and allied health professionals. From clinical assessments to credential verification, we handle it all. 
+    </p>
+    <h4 class="text-base md:text-lg font-semibold my-4">Specialities We Cover:</h4>
+    <ul class="flex flex-row flex-wrap gap-2 text-left text-sm md:text-base">
+      <li class="border border-gray-300 rounded px-4 py-2">ICU, ER, and Ward Nurses</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Medical Officers & General Physicians</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Lab Technicians</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Hospital Admin Staff</li>
+    </ul>
+  </div>
+
+  
+</div>
+
+ <div class="bg-white shadow-lg border-t-4 border-blue-500 rounded-lg grid md:grid-cols-4 gap-4 items-center mb-10 md:mb-20">
+    
+  <!-- Content: 3/4 width on md+ -->
+  <div class="md:col-span-3 p-6 md:p-10">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">Executive Search & Leadership Hiring</h3>
+    <h4 class="text-base md:text-lg font-semibold mb-4">Top Talent for Top Roles</h4>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-gray-700">
+      Looking for CXOs, Department Heads, or Function Leaders? Our executive search consultants ensure you meet the right leaders to steer your organization forward. 
+    </p>
+    <h4 class="text-base md:text-lg font-semibold my-4">Our Approach Includes:</h4>
+    <ul class="flex flex-row flex-wrap gap-2 text-left text-sm md:text-base">
+      <li class="border border-gray-300 rounded px-4 py-2">Confidential Search</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Psychometric Evaluation</li>
+      <li class="border border-gray-300 rounded px-4 py-2">Cultural Fit Assessment</li>
+    </ul>
+  </div>
+
+   <!-- Image: 1/4 width on md+ -->
+  <div class="md:col-span-1 hidden md:block h-full">
+    <img
+      src={service5.src}
+      alt="Service Image"
+      class="w-full h-full shadow-md object-cover rounded-tr-lg rounded-br-lg"
+    />
+  </div>
+</div>
+
+ <div class="bg-white shadow-lg border-t-4 border-yellow-500 rounded-lg grid md:grid-cols-4 gap-4 items-center ">
+       <!-- Image: 1/4 width on md+ -->
+  <div class="md:col-span-1 hidden md:block h-full">
+    <img
+      src={service6.src}
+      alt="Service Image"
+      class="w-full h-full shadow-md object-cover rounded-tr-lg rounded-br-lg"
+    />
+  </div>
+  <!-- Content: 3/4 width on md+ -->
+  <div class="md:col-span-3 p-6 md:p-10">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">Recruitment Process Outsourcing (RPO)</h3>
+    <h4 class="text-base md:text-lg font-semibold mb-4">Scale Faster with a Dedicated Hiring Partner</h4>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed text-gray-700">
+      Let our team manage your recruitment process end-to-end. From initial sourcing to final placement and onboarding, we act as an extension of your HR department — optimizing time and cost.
+    </p>
+  </div>
+
+
+</div>
+
+  </div>
+</section>
+
+<!-- Why Choose Global dynamic Talent Solutions? -->
+
+<section class="py-10 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="w-full max-w-5xl mx-auto text-xl md:text-3xl font-bold text-center py-4 bg-blue-500 text-white">Why Choose Global Dynamic Talent Solutions?</h2>
+       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5">
+  <!-- Card Template -->
+  <div class="flex flex-col items-center">
+    <div class="bg-gray-100 border border-gray-200 p-8 text-center w-full h-full flex flex-col justify-around">
+      <img src={reach.src} alt="Expertise" class="w-18 h-18 object-contain mx-auto" />
+      <p class="text-base mt-1">Global Reach with Local Expertise</p>
+    </div>
+  </div>
+
+  <!-- Repeat with same structure -->
+  <div class="flex flex-col items-center">
+    <div class="bg-gray-100 border border-gray-200 p-8 text-center w-full h-full flex flex-col justify-around">
+      <img src={personalization.src} alt="Global Reach" class="w-18 h-18 object-contain mb-4 mx-auto" />
+      <p class="text-base mt-1">Tech-Enabled Recruitment Process</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <div class="bg-gray-100 border border-gray-200 p-8 text-center w-full h-full flex flex-col justify-around">
+      <img src={recruitment.src} alt="Tailored Solutions" class="w-18 h-18 object-contain mb-4 mx-auto" />
+      <p class="text-base mt-1">Tailored Hiring Strategies</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <div class="bg-gray-100 border border-gray-200 p-8 text-center w-full h-full flex flex-col justify-around">
+      <img src={blockchain.src} alt="Compliance" class="w-18 h-18 object-contain mb-4 mx-auto" />
+      <p class="text-base mt-1">Fast Turnaround & Quality Shortlisting</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <div class="bg-gray-100 border border-gray-200 p-8 text-center w-full h-full flex flex-col justify-around">
+      <img src={handshake.src} alt="Support" class="w-18 h-18 object-contain mb-4 mx-auto" />
+      <p class="text-base mt-1">Confidential & Compliant Hiring</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+<div class="max-w-7xl mx-auto px-4">
+  <div class="bg-[#328eed] text-white flex flex-col md:flex-row justify-between items-start md:items-center mt-10 p-8 md:p-10 rounded-lg shadow-md">
+      <div class="md:w-3/5 w-full mb-4 md:mb-0">
+        <div class="text-base md:text-left md:text-lg leading-loose">
+            <h2 class="text-2xl md:text-4xl font-bold">Ready to Build Your Dream Team?</h2>
+         <p class="text-sm md:text-base leading-relaxed mt-3">Whether hiring for one role or an entire department, GDT Solution supports your growth with precision, professionalism, and people-first strategies. </p>
+        </div>
+      </div>
+      <div class="md:w-2/5 w-full flex flex-wrap gap-2 justify-center md:justify-end">
+  <a href="https://gdtsolution.com/jobs/"
+     class="flex items-center gap-2 px-6 py-3 bg-yellow-400 text-black border-[3px] border-yellow-200/50 rounded-md hover:bg-yellow-300 transition-colors duration-300">
+    Find Your Next Job Now
+  </a>
+  <a href="https://gdtsolution.com/contact-us/"
+     class="flex items-center gap-2 px-6 py-3 bg-yellow-400 text-black border-[3px] border-yellow-200/50 rounded-md hover:bg-yellow-300 transition-colors duration-300">
+    Contact Us
+  </a>
+</div></div></div>
+
+</section>
+
+
+</BaseLayout>

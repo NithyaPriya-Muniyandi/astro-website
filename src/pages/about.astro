@@ -1,0 +1,710 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import aboutResume from '../assets/about-us-2.webp';
+import research from '../assets/research.webp';
+import suitcase from '../assets/suitcase.webp'; 
+import systemadministration from '../assets/system-administration.webp';
+import education from '../assets/education.webp';
+import positivevote from '../assets/positive-vote.webp';
+import reach from '../assets/reach.webp';
+import blockchain from '../assets/blockchain.webp';
+import recruitment from '../assets/recruitment.webp';
+import personalization from '../assets/personalization.webp';
+import Integrity from '../assets/integration.webp';
+import Agility from '../assets/agile.webp';
+import Diversity from '../assets/people.webp';
+import Excellence from '../assets/handshake.webp';
+import Commitment from '../assets/excellence.webp';
+import location from '../assets/location.webp';
+import globeabout from '../assets/globe-about.webp';
+import aboutBg from '../assets/about.webp';
+---
+
+<BaseLayout title="About - Global Dynamic Talent Solution">
+<section
+  class="relative bg-cover bg-center bg-no-repeat min-h-[300px] flex items-center"
+  style={`background-image: url(${aboutBg.src})`}
+>
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/5 z-0"></div>
+
+  <!-- Content -->
+  <div class="container relative z-10 mx-auto px-4">
+    <div class="max-w-lg text-white mt-35 mb-20 md:my-40 md:pl-30">
+      <h1 class="text-2xl md:text-5xl font-bold mb-4 border-l-4 border-yellow-400 pl-4 rounded-lg">About Us</h1>
+      <hr class="border-t border-gray-500 mb-6 w-[90%]" />
+      <p class="text-lg md:text-xl font-black">
+        Global Dynamic Talent Solutions is a Leading Manpower Staffing and Talent Solution Firm
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- About Global Dynamic Talent Solution section -->
+
+<section class="bg-[#f5f5f5] py-10 md:py-20 px-4 text-[#292929]">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-7 gap-10 items-center">
+
+      <!-- Text Content: order 1 on all, full width center on small -->
+      <div class="col-span-5 order-1 md:order-2  md:text-left mx-auto md:mx-0">
+        <h2 class="text-2xl md:text-4xl font-bold mb-4">
+          About Global Dynamic Talent Solution
+        </h2>
+        <h3 class="text-xl md:text-2xl font-bold mb-6">
+          Empowering Talent. Enabling Growth.
+        </h3>
+        <p class="text-sm md:text-base mb-4 leading-7 md:leading-relaxed">
+          At Global Dynamic Talent Solution we believe that behind every successful organization is the right talent, and behind every talented individual is the right opportunity.
+        </p>
+        <p class="text-sm md:text-base leading-7 md:leading-relaxed">
+          Since our inception, we’ve been on a mission to connect exceptional professionals with forward-thinking organizations worldwide. With offices in India and Guyana, we specialize in cross-border recruitment and workforce solutions tailored to meet evolving industry demands.
+        </p>
+      </div>
+
+      <!-- Image + Overlay: order 2 on all, order 1 on md+ -->
+      <div class=" col-span-5 md:col-span-2 order-2 md:order-1 relative mx-auto md:mx-0 max-w-full md:max-w-md md:h-auto">
+        <img src={aboutResume.src} alt="About Us Image" class="w-full h-100 md:h-auto object-cover shadow-lg" />
+
+        <!-- Overlay Content -->
+        <div class="absolute bottom-0 left-0 w-full bg-white/80 p-6 justify-center shadow-md flex flex-col items-center gap-2">
+          <span class="text-xl font-semibold text-center w-full">
+            Submit Your Resume
+          </span>
+          <a href="https://gdtsolution.com/upload-your-cv/" class="block w-full bg-[#328eed] text-white hover:text-black text-sm font-bold px-4 py-4 rounded mx-auto cursor-pointer transition duration-300 text-center">
+            UPLOAD YOUR CV
+          </a>
+          <p class="text-base text-center w-full">
+            Max 3 MB, Type: doc, docx, pdf
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Who We Are -->
+
+<section class="bg-white py-10 md:py-20 px-4 text-[#292929] text-center">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">Who We Are</h2>
+    <p class="text-sm md:text-base leading-7 md:leading-relaxed mb-10 text-center">We are a global staffing and HR consultancy that partners with organizations to find, onboard, and retain top talent. Our services span across: </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 max-w-7xl mx-auto">
+<div class="flex flex-col items-center leading-relaxed border-b md:border-b-0 md:border-r border-gray-300 pr-4">
+  <div class="h-28 w-28 bg-[#328eed] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={research.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  
+  <p class="text-base md:text-lg my-3">Healthcare Recruitment</p>
+</div>
+
+<div class="flex flex-col items-center leading-relaxed border-b md:border-b-0 md:border-r border-gray-300 pr-4">
+  <div class="h-28 w-28 bg-[#328eed] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={suitcase.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-base my-3">Administrative & Corporate Roles</p>
+</div>
+
+<div class="flex flex-col items-center leading-relaxed border-b md:border-b-0 md:border-r border-gray-300 pr-4">
+  <div class="h-28 w-28 bg-[#328eed] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={systemadministration.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-base my-3">IT & Tech Placements</p>
+</div>
+
+<div class="flex flex-col items-center leading-relaxed border-b md:border-b-0 md:border-r border-gray-300 pr-4">
+  <div class="h-28 w-28 bg-[#328eed] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={education.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-base my-3">Education Sector Staffing</p>
+</div>
+
+
+<div class="flex flex-col items-center leading-relaxed pr-4">
+  <div class="h-28 w-28 bg-[#328eed] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={positivevote.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-base my-3">Skilled & Semi-Skilled Manpower Solutions</p>
+</div>  
+
+</div>
+<p class="mt-10 text-sm leading-7 md:leading-relaxed md:text-base">Our approach is people-first and purpose-driven, ensuring that each placement creates lasting value for the company and the individual.</p>
+  </div>
+</section>
+
+<!-- What Sets Us Apart? -->
+
+<section class="bg-[#f5f5f5] py-10 md:py-20 px-4 text-[#292929]">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6 md:mb-10 text-center">What Sets Us Apart?</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white border-t-4 border-[#328eed] rounded-lg shadow-md p-6 text-center">
+        <img src={reach.src} alt="Value 1" class="mx-auto h-16 w-16 mb-4" />
+        <h4 class="text-lg md:text-2xl mb-2">Global Reach, Local Insight</h4>
+        <p class="text-sm md:text-base leading-relaxed">We understand the unique demands of regional markets while bringing global talent strategies. </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white border-t-4 border-[#fabf0e] rounded-lg shadow-md p-6 text-center">
+        <img src={blockchain.src} alt="Value 2" class="mx-auto h-16 w-16 mb-4" />
+        <h3 class="text-lg md:text-2xl mb-2">Tech-Enabled Recruitment</h3>
+        <p class="text-sm md:text-base leading-relaxed">From AI-driven screening to digital onboarding, we harness modern tools to deliver faster, more innovative hiring.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white border-t-4 border-[#328eed] rounded-lg shadow-md p-6 text-center">
+        <img src={recruitment.src} alt="Value 3" class="mx-auto h-16 w-16 mb-4" />
+        <h3 class="text-lg md:text-2xl mb-2">End-to-End Hiring Support</h3>
+        <p class="text-sm md:text-base leading-relaxed">We manage the full recruitment lifecycle – from job profiling and sourcing to screening, placement, and post-hire support.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white border-t-4 border-[#fabf0e] rounded-lg shadow-md p-6 text-center">
+        <img src={personalization.src} alt="Value 4" class="mx-auto h-16 w-16 mb-4" />
+        <h3 class="text-lg md:text-2xl mb-2">Personalized Service</h3>
+        <p class="text-sm md:text-base leading-relaxed">We treat every client and candidate carefully, offering tailored solutions instead of one-size-fits-all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Empowering Careers. Enabling Companies. -->
+ <section class="mx-auto md:w-8xl text-center py-10 md:py-20 px-4 bg-white text-[#292929]">
+  <h2 class="text-2xl md:text-4xl font-bold mb-10">
+    Empowering Careers. Enabling Companies.
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 text-left max-w-7xl mx-auto">
+    <!-- Vision Card -->
+    <div class="p-10 bg-[#f5f5f5] leading-relaxed">
+      <h3 class="text-xl md:text-2xl font-semibold">Our Vision</h3>
+      <p class="font-bold my-4">To become the most trusted bridge between talent and opportunity across continents.</p>
+      <p>Our vision is to be the most trusted and preferred manpower staffing agency. We are committed to delivering exceptional quality, integrity, and transparency. Our goal is to exceed the expectations of clients and candidates at every step. We build long-term partnerships through tailored staffing solutions. Professionalism and excellence define our approach to every interaction. We empower businesses with top talent and individuals with fulfilling careers.</p>
+    </div>
+
+    <!-- Mission Card -->
+    <div class="p-10 bg-[#e3f1ff] leading-relaxed">
+      <h3 class="text-xl md:2xl font-semibold">Our Mission</h3>
+      <p class="font-bold my-4">To deliver dynamic staffing solutions through integrity, innovation, and a people-first approach.</p>
+      <p>We are on a mission to empower both employers and job seekers through agile, reliable, and future-ready customized recruitment strategies. Every placement is guided by a deep understanding of industry needs and individual aspirations. Powered by advanced technology and a passionate team of experts, we ensure a seamless hiring experience, prioritizing long-term success over short-term gains.</p>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center">
+  <h3 class="text-xl md:text-2xl font-semibold mb-8">Our Core Values</h3>
+
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-4 max-w-7xl mx-auto">
+    <!-- Value 1 -->
+<div class="flex flex-col items-center leading-relaxed">
+  <div class="h-28 w-28 bg-[#e3f1ff] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={Integrity.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-lg md:text-xl my-3">Integrity</p>
+  <p>We believe in approaching every interaction with transparency and honesty. Trust is the foundation of all our partnerships.</p>
+</div>
+
+
+    <!-- Value 2 -->
+  <div class="flex flex-col items-center leading-relaxed">
+  <div class="h-28 w-28 bg-[#e3f1ff] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={Agility.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-lg md:text-xl my-3">Agility</p>
+  <p>In a rapidly changing job market, we stay ahead by adapting quickly and delivering timely, effective staffing solutions.  </p>
+</div>
+
+    <!-- Value 3 -->
+  <div class="flex flex-col items-center leading-relaxed">
+  <div class="h-28 w-28 bg-[#e3f1ff] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={Diversity.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-lg md:text-xl my-3">Diversity</p>
+  <p>We celebrate & champion inclusivity, ensuring equal opportunities for all individuals across backgrounds, cultures, and geographies.</p>
+</div>
+
+    <!-- Value 4 -->
+   <div class="flex flex-col items-center leading-relaxed">
+  <div class="h-28 w-28 bg-[#e3f1ff] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={Excellence.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-lg md:text-xl my-3">Excellence</p>
+  <p>We strive for excellence in everything we do, from client service to candidate experience, setting high standards in global recruitment.</p>
+</div>
+
+    <!-- Value 5 -->
+   <div class="flex flex-col items-center leading-relaxed">
+  <div class="h-28 w-28 bg-[#e3f1ff] rounded-full shadow-md flex items-center justify-center mb-2">
+    <img 
+      src={Commitment.src} 
+      alt="Value 1"
+      class="h-16 w-16 object-contain"
+    />
+  </div>
+  <p class="text-lg md:text-xl my-3">Commitment</p>
+  <p>We are wholeheartedly committed to empowering our clients to achieve lasting success and supporting our candidates every step of the way, from onboarding applications.</p>
+</div>
+  </div>
+</div>
+  
+</section>
+
+<!-- Our Global Presence -->
+<section class="bg-[#fabf0e] py-10 md:py-20 px-4 text-[#292929] text-center">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6 md:mb-10">Our Global Presence</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Office Card -->
+      <div class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+        <img 
+          src={location.src} 
+          alt="India Office" 
+          class="h-auto w-auto mb-4 md:mb-0 md:w-1/3" 
+        />
+        <div class="md:ml-6">
+          <h3 class="text-lg md:text-2xl mb-2">India (Coimbatore)</h3>
+          <p class="text-sm md:text-base leading-relaxed">
+            Sourcing top Indian talent and managing domestic staffing needs.
+          </p>  
+        </div>
+      </div>
+
+      <!-- Office Card -->
+      <div class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+        <img 
+          src={location.src} 
+          alt="Guyana Office" 
+          class="h-auto w-auto mb-4 md:mb-0 md:w-1/3" 
+        />
+        <div class="md:ml-6">
+          <h3 class="text-lg md:text-2xl mb-2">Guyana (Georgetown)</h3>
+          <p class="text-sm md:text-base leading-relaxed">
+            Connecting Caribbean employers with international professionals.
+          </p>  
+        </div>
+      </div>
+
+      <!-- Office Card -->
+      <div class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+        <img 
+          src={globeabout.src} 
+          alt="Global HQ" 
+          class="h-auto w-auto mb-4 md:mb-0 md:w-1/3" 
+        />
+        <div class="md:ml-6">
+          <h3 class="text-lg md:text-2xl mb-2">Expanding Reach</h3>
+          <p class="text-sm md:text-base leading-relaxed">
+            Supporting organizations in the U.S., Caribbean, Middle East, and more. 
+          </p>  
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#328eed] text-white flex flex-col md:flex-row justify-between items-start md:items-center mt-10 p-8 md:p-10 rounded-lg shadow-md">
+      <div class="md:w-3/5 w-full mb-4 md:mb-0">
+        <div class="text-base md:text-left md:text-lg leading-loose">
+            <h2 class="text-2xl md:text-4xl font-bold">Let’s Build the Future of Work</h2>
+         <p class="text-sm md:text-base leading-relaxed mt-3">Whether you’re a job seeker looking to take the next big step or an employer seeking transformational talent, Global Dynamic Talent Solution is here to guide you on your journey. </p>
+        </div>
+      </div>
+      <div class="md:w-2/5 w-full flex flex-wrap gap-2 justify-center md:justify-end">
+  <a href="https://gdtsolution.com/jobs/"
+     class="flex items-center gap-2 px-6 py-3 bg-yellow-400 text-black border-[3px] border-yellow-200/50 rounded-md hover:bg-yellow-300 transition-colors duration-300">
+    Find Your Next Job Now
+  </a>
+  <a href="https://gdtsolution.com/contact-us/"
+     class="flex items-center gap-2 px-6 py-3 bg-yellow-400 text-black border-[3px] border-yellow-200/50 rounded-md hover:bg-yellow-300 transition-colors duration-300">
+    Contact Us
+  </a>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- POE Details -->
+<section class="bg-[#f5f5f5] py-10 md:py-20 px-4 text-[#292929]">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">POE Details</h2>
+
+    <!-- Tabs (md and up) -->
+    <div
+      class="hidden md:flex justify-center gap-2 w-full mb-6 bg-white"
+      id="tab-buttons"
+    >
+      <button
+        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
+        data-tab="RAInfo"
+      >
+        RA Information
+      </button>
+      <button
+        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
+        data-tab="Charges"
+      >
+        Service Charges
+      </button>
+      <button
+        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
+        data-tab="Payment"
+      >
+        Mode of Payment
+      </button>
+      <button
+        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
+        data-tab="Grievances"
+      >
+        Grievances Redressal
+      </button>
+    </div>
+
+    <!-- Tab Contents (md and up) -->
+    <div class="hidden md:block">
+      <div id="RAInfo" class="tab-panel block">
+        <h3 class="text-xl font-semibold mb-4">RA Information</h3>
+        <div class="border border-blue-500 rounded">
+          <table class="w-full table-auto text-left">
+            <tbody class="divide-y divide-blue-500">
+              <tr>
+                <th class="p-3 font-semibold w-1/3">Recruitment Agency Name</th>
+                <td class="p-3">SHRI MAHAARAAHNI ENTERPRISES PRIVATE LIMITED</td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold">RA License Number</th>
+                <td class="p-3">RA5253770</td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold">RC Holder Name</th>
+                <td class="p-3">S P Saju Bhaskar</td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold">Contact Information</th>
+                <td class="p-3">0422–4724493, +919500181783, info@gdtsolution.com</td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold">Validity status of the RC</th>
+                <td class="p-3">2029</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="Charges" class="tab-panel hidden">
+        <h3 class="text-xl font-semibold mb-4">Service charges information</h3>
+        <div class="border border-blue-500 rounded">
+          <table class="w-full table-auto text-left">
+            <tbody class="divide-y divide-blue-500">
+              <tr>
+                <th class="p-3 font-semibold w-1/3">Services Offered</th>
+                <td class="p-3">Staffing Solutions (Domestic & International)</td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold">Cost of Services</th>
+                <td class="p-3">Service charges Rs 30000 plus other cost.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="Payment" class="tab-panel hidden">
+        <h3 class="text-xl font-semibold mb-4">Mode of Payment</h3>
+        <div class="border border-blue-500 rounded">
+          <table class="w-full table-auto text-left">
+            <tbody class="divide-y divide-blue-500">
+              <tr>
+                <th class="p-3 font-semibold w-1/3">Mode of Payment of services charges</th>
+                <td class="p-3 w-2/3">RTGS, NEFT, UPI etc. No cash is entertained.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="Grievances" class="tab-panel hidden">
+        <h3 class="text-xl font-semibold mb-4">Grievances Redressel</h3>
+        <div class="border border-blue-500 rounded">
+          <table class="w-full table-auto text-left">
+            <tbody class="divide-y divide-blue-500">
+              <tr>
+                <th class="p-3 font-semibold w-1/3">
+                  Remedies available to emigrants for redressal of grievances
+                </th>
+                <td class="p-3 w-2/3">
+                  Name of the Contact Person : Ms. Poornima J<br />
+                  Email ID : poornima.j@gdtsolution.com<br />
+                  Mobile : Call & Whatsapp : + 91 9500181783
+                </td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold w-1/3">PGE Name / Address / E-mail ID</th>
+                <td class="p-3 w-2/3">
+                  Shri Surinder Bhagat.F.S , Protector General of Emigrants, Ministry of External
+                  affairs , Room No.308, Sushma Swaraj Bhawan, Pravasi Bharatiya Kendra, Malcha,i
+                  ,New Delhi-110021, website:www.mea.gov.in
+                </td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold w-1/3">POE, Chennai Name / Address / E-mail ID</th>
+                <td class="p-3 w-2/3">
+                  Shri Rajkumar M IFS ,Protector of Emigrants ,Ministry of External Affairs,Government
+                  of India, No.68, Ist floor, DPI Campus, EVK Sampath Maaligai, College Road,
+                  Chennai-600006, Website: www.mea.gov.in
+                </td>
+              </tr>
+              <tr>
+                <th class="p-3 font-semibold w-1/3">Emigrate Website URL</th>
+                <td class="p-3 w-2/3">https://emigrate.gov.in/</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion (below md) -->
+    <div class="md:hidden space-y-2">
+      <div class="accordion-item border-t border-blue-500" data-tab="RAInfo">
+        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+          RA Information
+        </button>
+        <div class="accordion-content px-4 pb-4 hidden">
+          <h3 class="text-xl font-semibold mb-4">RA Information</h3>
+          <div class="border border-blue-500 rounded">
+            <table class="w-full table-auto text-left">
+              <tbody class="divide-y divide-blue-500">
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">Recruitment Agency Name</th>
+                  <td class="p-3">SHRI MAHAARAAHNI ENTERPRISES PRIVATE LIMITED</td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold">RA License Number</th>
+                  <td class="p-3">RA5253770</td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold">RC Holder Name</th>
+                  <td class="p-3">S P Saju Bhaskar</td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold">Contact Information</th>
+                  <td class="p-3">0422–4724493, +919500181783, info@gdtsolution.com</td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold">Validity status of the RC</th>
+                  <td class="p-3">2029</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-t border-blue-500 " data-tab="Charges">
+        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+          Service Charges
+        </button>
+        <div class="accordion-content px-4 pb-4 hidden">
+          <h3 class="text-xl font-semibold mb-4">Service charges information</h3>
+          <div class="border border-blue-500 rounded">
+            <table class="w-full table-auto text-left">
+              <tbody class="divide-y divide-blue-500">
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">Services Offered</th>
+                  <td class="p-3">Staffing Solutions (Domestic & International)</td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold">Cost of Services</th>
+                  <td class="p-3">Service charges Rs 30000 plus other cost.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-t border-blue-500 " data-tab="Payment">
+        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+          Mode of Payment
+        </button>
+        <div class="accordion-content px-4 pb-4 hidden">
+          <h3 class="text-xl font-semibold mb-4">Mode of Payment</h3>
+          <div class="border border-blue-500 rounded">
+            <table class="w-full table-auto text-left">
+              <tbody class="divide-y divide-blue-500">
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">Mode of Payment of services charges</th>
+                  <td class="p-3 w-2/3">RTGS, NEFT, UPI etc. No cash is entertained.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-t border-blue-500" data-tab="Grievances">
+        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+          Grievances Redressal
+        </button>
+        <div class="accordion-content px-4 pb-4 hidden">
+          <h3 class="text-xl font-semibold mb-4">Grievances Redressel</h3>
+          <div class="border border-blue-500 rounded">
+            <table class="w-full table-auto text-left">
+              <tbody class="divide-y divide-blue-500">
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">
+                    Remedies available to emigrants for redressal of grievances
+                  </th>
+                  <td class="p-3 w-2/3">
+                    Name of the Contact Person : Ms. Poornima J<br />
+                    Email ID : poornima.j@gdtsolution.com<br />
+                    Mobile : Call & Whatsapp : + 91 9500181783
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">PGE Name / Address / E-mail ID</th>
+                  <td class="p-3 w-2/3">
+                    Shri Surinder Bhagat.F.S , Protector General of Emigrants, Ministry of External
+                    affairs , Room No.308, Sushma Swaraj Bhawan, Pravasi Bharatiya Kendra, Malcha,i
+                    ,New Delhi-110021, website:www.mea.gov.in
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">POE, Chennai Name / Address / E-mail ID</th>
+                  <td class="p-3 w-2/3">
+                    Shri Rajkumar M IFS ,Protector of Emigrants ,Ministry of External Affairs,Government
+                    of India, No.68, Ist floor, DPI Campus, EVK Sampath Maaligai, College Road,
+                    Chennai-600006, Website: www.mea.gov.in
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-3 font-semibold w-1/3">Emigrate Website URL</th>
+                  <td class="p-3 w-2/3">https://emigrate.gov.in/</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".tab-button") as NodeListOf<HTMLButtonElement>;
+    const panels = document.querySelectorAll(".tab-panel");
+    const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+    // Media query to check screen width
+    const isMdUp = () => window.matchMedia("(min-width: 768px)").matches;
+
+    function activateTabs() {
+      // Initialize first tab active by default
+      if (buttons.length > 0) {
+        buttons[0].classList.add("border-blue-500", "font-semibold");
+        panels.forEach((p, i) => {
+          p.classList.toggle("hidden", i !== 0);
+        });
+      }
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const target = btn.dataset.tab;
+
+          buttons.forEach((b) => {
+            b.classList.remove("border-blue-500", "font-semibold");
+            b.classList.add("border-transparent");
+          });
+          btn.classList.add("border-blue-500", "font-semibold");
+          btn.classList.remove("border-transparent");
+
+          panels.forEach((panel) => {
+            if (panel.id === target) {
+              panel.classList.remove("hidden");
+            } else {
+              panel.classList.add("hidden");
+            }
+          });
+        });
+      });
+    }
+
+    function activateAccordion() {
+      accordionHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling as HTMLElement | null;
+          if (!content) return;
+
+          const isVisible = !content.classList.contains("hidden");
+
+          // Close all
+          document.querySelectorAll(".accordion-content").forEach((acc) => {
+            (acc as HTMLElement).classList.add("hidden");
+          });
+
+          // Toggle clicked
+          if (!isVisible) {
+            content.classList.remove("hidden");
+          }
+        });
+      });
+    }
+
+    // Apply behavior based on screen size
+    if (isMdUp()) {
+      activateTabs();
+    } else {
+      activateAccordion();
+    }
+
+    // Optional: Respond to resize (if you want to switch behavior dynamically)
+    window.addEventListener("resize", () => {
+      location.reload(); // Reload on resize breakpoint crossing for simplicity
+    });
+  });
+</script>
+
+</section>
+</BaseLayout>

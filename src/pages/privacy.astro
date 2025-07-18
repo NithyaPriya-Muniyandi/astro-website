@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+import privacy from '../assets/privacy.webp';
+---
+<BaseLayout title="Privacy Policy - Global Dynamic Talent Solution">
+    <section
+    class="relative bg-cover bg-center bg-no-repeat min-h-[300px] flex items-center"
+    style={`background-image: url(${privacy.src});`}
+  >
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/10 to-black/5 z-0"></div>
+
+    <!-- Content -->
+    <div class="container relative z-10 mx-auto px-4">
+      <div class="max-w-lg text-white mt-35 mb-20 md:my-40 md:pl-30">
+        <h1 class="text-2xl md:text-5xl font-bold mb-4 border-l-4 border-yellow-400 pl-4 rounded-lg">Privacy Policy</h1>
+         <hr class="border-t border-gray-500 mb-6 w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- privacy content -->
+
+<section class="bg-white py-10 md:py-20 px-4 text-[#292929] leading-relaxed  text-justify text-sm md:text-base">
+  <div class="max-w-4xl mx-auto">
+    <p>We respect your privacy and we are strongly committed to protecting your privacy. We value the trust that you place in us by providing to us your personal data and we are committed to taking all reasonable precautions to protect your personal data from misuse and keeping it secured by complying with all applicable data protection laws and regulations, as amended from time to time.</p>
+    <h3 class="text-lg md:text-2xl text-start font-bold pt-10">Your Consent</h3>
+    <p class="py-4 md:py-10">By using our services and website, you are consenting to our collecting, using and disclosing your personal data in accordance with this Privacy Policy. We will only collect, use or disclose your personal data where it is fair and lawful to do so. In most cases, we will ask for your consent explicitly.</p>
+    <p><strong>Global Dynamic Talent Solutions</strong>, (<a href="https://gdtsolution.com/" class="text-blue-500">www.gdtsolution.com</a>) collects the information you voluntarily provide when you use one of our sites.</p>
+    <p class="py-4 md:py-10">The information we collect depends on how you use our Sites, but, in many cases, it will identify you personally. For example, if you submit an application, we collect the information you provide as part of the online application process.</p>
+    <p><strong>Information We Collect:-<br/></strong> We collect two types of information when you visit our website:</p>
+
+    <h3 class="text-lg md:text-2xl text-start font-bold py-4 md:py-10">Personal Information You Provide to Us:</h3>
+   <ul class="list-disc pl-5 space-y-4 text-sm md:text-base leading-relaxed">
+  <li>
+    <strong>Job Applicants:</strong> When you apply for a job through our website, we collect personal information such as your name, contact information (email, phone number), resume/CV, cover letter, work history, and other details relevant to the recruitment process.
+  </li>
+  <li>
+    <strong>Clients/Employers:</strong> If you are a business or employer using our services to hire staff, we may collect company name, business contact details, job listings, and other related information.
+  </li>
+  <li>
+    <strong>Data Security:</strong> We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, disclosure, alteration, and destruction. However, please be aware that no method of data transmission over the internet is entirely secure, and we cannot guarantee absolute security.
+  </li>
+</ul>
+
+
+</div>
+</section>
+</BaseLayout>
