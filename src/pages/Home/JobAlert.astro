@@ -16,11 +16,13 @@ import searchJobBg from '../../assets/searchJob.webp';
       <h2 class="text-2xl md:text-4xl font-bold mb-4">Stay Updated – Get Job Alerts</h2>
       <p class="my-5">Sign up for tailored job alerts based on location, skills, and career goals.</p>
       <form>
-        <input type="text" placeholder="Enter your name" class="w-full p-3 mb-4 bg-[#f5f5f5] text-gray-500 rounded-sm shadow-md" />
-        <input type="email" placeholder="Enter your email" class="w-full p-3 mb-4 bg-[#f5f5f5] text-gray-500 rounded-sm shadow-md" />
-        <input class="bg-yellow-500 px-4 py-3 rounded hover:text-black border-3 border-yellow-300/80" type="submit" value="SUBSCRIBE" />
+        <input type="text" required placeholder="Enter your name" class="w-full p-3 mb-4 bg-[#f5f5f5] text-gray-500 rounded-sm shadow-md" />
+        <input type="email" required placeholder="Enter your email" class="w-full p-3 mb-4 bg-[#f5f5f5] text-gray-500 rounded-sm shadow-md" />
+        <input 
+  class="bg-yellow-500 px-4 py-3 rounded hover:text-black border-3 border-yellow-300/80 hover:cursor-pointer" 
+  type="submit" 
+  value="SUBSCRIBE" />
       </form>
-      <p class="mt-3">Thank you, your sign-up request was successful! Please check your email inbox to confirm.</p>
     </div>
   </div>
 </section>

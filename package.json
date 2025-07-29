@@ -2,19 +2,27 @@
   "name": "samplewebsite",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://NithyaPriya-Muniyandi.github.io/Astro-website/",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hotwired/turbo": "^8.0.13",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.8.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.7"
   }
 }
