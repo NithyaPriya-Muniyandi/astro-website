@@ -194,7 +194,7 @@ import aboutBg from '../assets/about.webp';
 </section>
 
 <!-- Empowering Careers. Enabling Companies. -->
- <section class="mx-auto md:w-8xl text-center py-10 md:py-20 px-4 bg-white text-[#292929]">
+<section class="mx-auto md:w-8xl text-center py-10 md:py-20 px-4 bg-white text-[#292929]">
   <h2 class="text-2xl md:text-4xl font-bold mb-10">
     Empowering Careers. Enabling Companies.
   </h2>
@@ -369,342 +369,226 @@ import aboutBg from '../assets/about.webp';
   <div class="max-w-7xl mx-auto">
     <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">POE Details</h2>
 
-    <!-- Tabs (md and up) -->
-    <div
-      class="hidden md:flex justify-center gap-2 w-full mb-6 bg-white"
-      id="tab-buttons"
-    >
-      <button
-        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
-        data-tab="RAInfo"
-      >
-        RA Information
-      </button>
-      <button
-        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
-        data-tab="Charges"
-      >
-        Service Charges
-      </button>
-      <button
-        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
-        data-tab="Payment"
-      >
-        Mode of Payment
-      </button>
-      <button
-        class="tab-button flex-1 px-4 py-4 font-medium bg-white font-semibold border-b-2 border-transparent"
-        data-tab="Grievances"
-      >
-        Grievances Redressal
-      </button>
-    </div>
+    <div class="hidden md:flex justify-center gap-1 bg-white border-gray-300 mb-6">
+  <!-- RA Information – starts with ring -->
+  <button
+    class="tab-btn flex-1 py-5 text-center text-sm md:text-base hover:bg-gray-100
+           border-blue-500 text-blue-600 font-semibold
+           ring-2 ring-blue-500 ring-offset-2
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer"
+    data-tab="RAInfo"
+  >
+    RA Information
+  </button>
 
-    <!-- Tab Contents (md and up) -->
-    <div class="hidden md:block">
-      <div id="RAInfo" class="tab-panel block">
+  <!-- other tabs start neutral -->
+  <button
+    class="tab-btn flex-1 py-5 text-center text-sm md:text-base hover:bg-gray-100
+           border-transparent text-gray-700
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer"
+    data-tab="Charges"
+  >
+    Service Charges
+  </button>
+  <button
+    class="tab-btn flex-1 py-5 text-center text-sm md:text-base hover:bg-gray-100
+           border-transparent text-gray-700
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer"
+    data-tab="Payment"
+  >
+    Mode of Payment
+  </button>
+  <button
+    class="tab-btn flex-1 py-5 text-center text-sm md:text-base hover:bg-gray-100
+           border-transparent text-gray-700
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 cursor-pointer"
+    data-tab="Grievances"
+  >
+    Grievances Redressal
+  </button>
+</div>
+
+    <!-- ===== SHARED PANEL WRAPPER ===== -->
+    <div id="tab-panels" class="hidden md:block space-y-6">
+      <div id="RAInfo" class="panel">
         <h3 class="text-xl font-semibold mb-4">RA Information</h3>
-        <div class="border border-blue-500 rounded">
-          <table class="w-full table-auto text-left">
-            <tbody class="divide-y divide-blue-500">
-              <tr>
-                <th class="p-3 font-semibold w-1/3">Recruitment Agency Name</th>
-                <td class="p-3">SHRI MAHAARAAHNI ENTERPRISES PRIVATE LIMITED</td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold">RA License Number</th>
-                <td class="p-3">RA5253770</td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold">RC Holder Name</th>
-                <td class="p-3">S P Saju Bhaskar</td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold">Contact Information</th>
-                <td class="p-3">0422–4724493, +919500181783, info@gdtsolution.com</td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold">Validity status of the RC</th>
-                <td class="p-3">2029</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Recruitment Agency Name</th><td class="p-3">SHRI MAHAARAAHNI ENTERPRISES PRIVATE LIMITED</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">RA License Number</th><td class="p-3">RA5253770</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">RC Holder Name</th><td class="p-3">S P Saju Bhaskar</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Contact Information</th><td class="p-3">0422–4724493, +919500181783, info@gdtsolution.com</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Validity status of the RC</th><td class="p-3">2029</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div id="Charges" class="tab-panel hidden">
+      <div id="Charges" class="panel hidden">
         <h3 class="text-xl font-semibold mb-4">Service charges information</h3>
-        <div class="border border-blue-500 rounded">
-          <table class="w-full table-auto text-left">
-            <tbody class="divide-y divide-blue-500">
-              <tr>
-                <th class="p-3 font-semibold w-1/3">Services Offered</th>
-                <td class="p-3">Staffing Solutions (Domestic & International)</td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold">Cost of Services</th>
-                <td class="p-3">Service charges Rs 30000 plus other cost.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Services Offered</th><td class="p-3">Staffing Solutions (Domestic & International)</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Cost of Services</th><td class="p-3">Service charges Rs 30000 plus other cost.</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div id="Payment" class="tab-panel hidden">
+      <div id="Payment" class="panel hidden">
         <h3 class="text-xl font-semibold mb-4">Mode of Payment</h3>
-        <div class="border border-blue-500 rounded">
-          <table class="w-full table-auto text-left">
-            <tbody class="divide-y divide-blue-500">
-              <tr>
-                <th class="p-3 font-semibold w-1/3">Mode of Payment of services charges</th>
-                <td class="p-3 w-2/3">RTGS, NEFT, UPI etc. No cash is entertained.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Mode of Payment of services charges</th><td class="p-3">RTGS, NEFT, UPI etc. No cash is entertained.</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div id="Grievances" class="tab-panel hidden">
-        <h3 class="text-xl font-semibold mb-4">Grievances Redressel</h3>
-        <div class="border border-blue-500 rounded">
-          <table class="w-full table-auto text-left">
-            <tbody class="divide-y divide-blue-500">
-              <tr>
-                <th class="p-3 font-semibold w-1/3">
-                  Remedies available to emigrants for redressal of grievances
-                </th>
-                <td class="p-3 w-2/3">
-                  Name of the Contact Person : Ms. Poornima J<br />
-                  Email ID : poornima.j@gdtsolution.com<br />
-                  Mobile : Call & Whatsapp : + 91 9500181783
-                </td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold w-1/3">PGE Name / Address / E-mail ID</th>
-                <td class="p-3 w-2/3">
-                  Shri Surinder Bhagat.F.S , Protector General of Emigrants, Ministry of External
-                  affairs , Room No.308, Sushma Swaraj Bhawan, Pravasi Bharatiya Kendra, Malcha,i
-                  ,New Delhi-110021, website:www.mea.gov.in
-                </td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold w-1/3">POE, Chennai Name / Address / E-mail ID</th>
-                <td class="p-3 w-2/3">
-                  Shri Rajkumar M IFS ,Protector of Emigrants ,Ministry of External Affairs,Government
-                  of India, No.68, Ist floor, DPI Campus, EVK Sampath Maaligai, College Road,
-                  Chennai-600006, Website: www.mea.gov.in
-                </td>
-              </tr>
-              <tr>
-                <th class="p-3 font-semibold w-1/3">Emigrate Website URL</th>
-                <td class="p-3 w-2/3">https://emigrate.gov.in/</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div id="Grievances" class="panel hidden">
+        <h3 class="text-xl font-semibold mb-4">Grievances Redressal</h3>
+        <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">Remedies available to emigrants for redressal of grievances</th>
+              <td class="p-3">Name : Ms. Poornima J<br>Email : poornima.j@gdtsolution.com<br>Mobile / WhatsApp : +91 9500181783</td>
+            </tr>
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">PGE Name / Address / Email</th>
+              <td class="p-3">Shri Surinder Bhagat, Protector General of Emigrants, MEA, Room No.308, Sushma Swaraj Bhawan, New Delhi–110021<br>Web: www.mea.gov.in</td>
+            </tr>
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">POE, Chennai</th>
+              <td class="p-3">Shri Rajkumar M IFS, No.68, 1st floor, DPI Campus, College Road, Chennai-600006<br>Web: www.mea.gov.in</td>
+            </tr>
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">Emigrate Website</th>
+              <td class="p-3"><a href="https://emigrate.gov.in/" class="text-blue-600 underline" target="_blank">https://emigrate.gov.in/</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
-    <!-- Accordion (below md) -->
-    <div class="md:hidden space-y-2">
-      <div class="accordion-item border-t border-blue-500" data-tab="RAInfo">
-        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+    <!-- ===== MOBILE ACCORDION (<768px) ===== -->
+    <div id="accordion" class="md:hidden space-y-1">
+      <details class="accordion">
+        <summary class="accordion-summary flex justify-between items-center w-full px-4 py-3 font-semibold cursor-pointer border-t border-blue-500">
           RA Information
-        </button>
-        <div class="accordion-content px-4 pb-4 hidden">
-          <h3 class="text-xl font-semibold mb-4">RA Information</h3>
-          <div class="border border-blue-500 rounded">
-            <table class="w-full table-auto text-left">
-              <tbody class="divide-y divide-blue-500">
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">Recruitment Agency Name</th>
-                  <td class="p-3">SHRI MAHAARAAHNI ENTERPRISES PRIVATE LIMITED</td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold">RA License Number</th>
-                  <td class="p-3">RA5253770</td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold">RC Holder Name</th>
-                  <td class="p-3">S P Saju Bhaskar</td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold">Contact Information</th>
-                  <td class="p-3">0422–4724493, +919500181783, info@gdtsolution.com</td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold">Validity status of the RC</th>
-                  <td class="p-3">2029</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <span class="accordion-icon text-blue-500 transition-transform duration-200">▼</span>
+        </summary>
+        <div class="accordion-content px-4 pb-4">
+           <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Recruitment Agency Name</th><td class="p-3">SHRI MAHAARAAHNI ENTERPRISES PRIVATE LIMITED</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">RA License Number</th><td class="p-3">RA5253770</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">RC Holder Name</th><td class="p-3">S P Saju Bhaskar</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Contact Information</th><td class="p-3">0422–4724493, +919500181783, info@gdtsolution.com</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Validity status of the RC</th><td class="p-3">2029</td></tr>
+          </tbody>
+        </table>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item border-t border-blue-500 " data-tab="Charges">
-        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+      <details class="accordion">
+        <summary class="accordion-summary flex justify-between items-center w-full px-4 py-3 font-semibold cursor-pointer border-t border-blue-500">
           Service Charges
-        </button>
-        <div class="accordion-content px-4 pb-4 hidden">
-          <h3 class="text-xl font-semibold mb-4">Service charges information</h3>
-          <div class="border border-blue-500 rounded">
-            <table class="w-full table-auto text-left">
-              <tbody class="divide-y divide-blue-500">
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">Services Offered</th>
-                  <td class="p-3">Staffing Solutions (Domestic & International)</td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold">Cost of Services</th>
-                  <td class="p-3">Service charges Rs 30000 plus other cost.</td>
-                </tr>
-              </tbody>
-            </table>
+          <span class="accordion-icon text-blue-500 transition-transform duration-200">▼</span>
+        </summary>
+        <div class="accordion-content px-4 pb-4">
+          <div id="Charges-mobile" class="panel-content">
+             <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Services Offered</th><td class="p-3">Staffing Solutions (Domestic & International)</td></tr>
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Cost of Services</th><td class="p-3">Service charges Rs 30000 plus other cost.</td></tr>
+          </tbody>
+        </table>
           </div>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item border-t border-blue-500 " data-tab="Payment">
-        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+      <details class="accordion">
+        <summary class="accordion-summary flex justify-between items-center w-full px-4 py-3 font-semibold cursor-pointer border-t border-blue-500">
           Mode of Payment
-        </button>
-        <div class="accordion-content px-4 pb-4 hidden">
-          <h3 class="text-xl font-semibold mb-4">Mode of Payment</h3>
-          <div class="border border-blue-500 rounded">
-            <table class="w-full table-auto text-left">
-              <tbody class="divide-y divide-blue-500">
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">Mode of Payment of services charges</th>
-                  <td class="p-3 w-2/3">RTGS, NEFT, UPI etc. No cash is entertained.</td>
-                </tr>
-              </tbody>
-            </table>
+          <span class="accordion-icon text-blue-500 transition-transform duration-200">▼</span>
+        </summary>
+        <div class="accordion-content px-4 pb-4">
+          <div id="Payment-mobile" class="panel-content">
+             <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr><th class="p-3 font-semibold text-start border-r border-blue-500">Mode of Payment of services charges</th><td class="p-3">RTGS, NEFT, UPI etc. No cash is entertained.</td></tr>
+          </tbody>
+          </table>
           </div>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item border-t border-blue-500" data-tab="Grievances">
-        <button class="accordion-header w-full px-4 py-4 text-left font-semibold">
+      <details class="accordion">
+        <summary class="accordion-summary flex justify-between items-center w-full px-4 py-3 font-semibold cursor-pointer border-t border-blue-500">
           Grievances Redressal
-        </button>
-        <div class="accordion-content px-4 pb-4 hidden">
-          <h3 class="text-xl font-semibold mb-4">Grievances Redressel</h3>
-          <div class="border border-blue-500 rounded">
-            <table class="w-full table-auto text-left">
-              <tbody class="divide-y divide-blue-500">
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">
-                    Remedies available to emigrants for redressal of grievances
-                  </th>
-                  <td class="p-3 w-2/3">
-                    Name of the Contact Person : Ms. Poornima J<br />
-                    Email ID : poornima.j@gdtsolution.com<br />
-                    Mobile : Call & Whatsapp : + 91 9500181783
-                  </td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">PGE Name / Address / E-mail ID</th>
-                  <td class="p-3 w-2/3">
-                    Shri Surinder Bhagat.F.S , Protector General of Emigrants, Ministry of External
-                    affairs , Room No.308, Sushma Swaraj Bhawan, Pravasi Bharatiya Kendra, Malcha,i
-                    ,New Delhi-110021, website:www.mea.gov.in
-                  </td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">POE, Chennai Name / Address / E-mail ID</th>
-                  <td class="p-3 w-2/3">
-                    Shri Rajkumar M IFS ,Protector of Emigrants ,Ministry of External Affairs,Government
-                    of India, No.68, Ist floor, DPI Campus, EVK Sampath Maaligai, College Road,
-                    Chennai-600006, Website: www.mea.gov.in
-                  </td>
-                </tr>
-                <tr>
-                  <th class="p-3 font-semibold w-1/3">Emigrate Website URL</th>
-                  <td class="p-3 w-2/3">https://emigrate.gov.in/</td>
-                </tr>
-              </tbody>
-            </table>
+          <span class="accordion-icon text-blue-500 transition-transform duration-200">▼</span>
+        </summary>
+        <div class="accordion-content px-4 pb-4">
+          <div id="Grievances-mobile" class="panel-content">
+               <table class="w-full border border-blue-500 rounded">
+          <tbody class="divide-y divide-blue-500">
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">Remedies available to emigrants for redressal of grievances</th>
+              <td class="p-3">Name : Ms. Poornima J<br>Email : poornima.j@gdtsolution.com<br>Mobile / WhatsApp : +91 9500181783</td>
+            </tr>
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">PGE Name / Address / Email</th>
+              <td class="p-3">Shri Surinder Bhagat, Protector General of Emigrants, MEA, Room No.308, Sushma Swaraj Bhawan, New Delhi–110021<br>Web: www.mea.gov.in</td>
+            </tr>
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">POE, Chennai</th>
+              <td class="p-3">Shri Rajkumar M IFS, No.68, 1st floor, DPI Campus, College Road, Chennai-600006<br>Web: www.mea.gov.in</td>
+            </tr>
+            <tr>
+              <th class="p-3 font-semibold text-start border-r border-blue-500">Emigrate Website</th>
+              <td class="p-3"><a href="https://emigrate.gov.in/" class="text-blue-600 underline" target="_blank">https://emigrate.gov.in/</a></td>
+            </tr>
+          </tbody>
+        </table>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </div>
 
- <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".tab-button") as NodeListOf<HTMLButtonElement>;
-    const panels = document.querySelectorAll(".tab-panel");
-    const accordionHeaders = document.querySelectorAll(".accordion-header");
+  <!-- ===== JAVASCRIPT ===== -->
+<script>
+(() => {
+  /* ---------- DESKTOP TABS (≥ 768 px) ---------- */
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.tab-btn');
+  const panels  = document.querySelectorAll<HTMLDivElement>('#tab-panels .panel');
 
-    // Media query to check screen width
-    const isMdUp = () => window.matchMedia("(min-width: 768px)").matches;
+  const switchTab = (tabName: string): void => {
+    buttons.forEach(btn => {
+      const active = btn.dataset.tab === tabName;
+      btn.classList.toggle('ring-2', active);
+      btn.classList.toggle('ring-blue-500', active);
+      btn.classList.toggle('ring-offset-2', active);
+      btn.classList.toggle('border-blue-500', active);
+      btn.classList.toggle('border-transparent', !active);
+      btn.classList.toggle('text-blue-600', active);
+      btn.classList.toggle('text-gray-700', !active);
+      btn.classList.toggle('font-semibold', active);
+    });
+    panels.forEach(p => p.classList.toggle('hidden', p.id !== tabName));
+  };
 
-    function activateTabs() {
-      // Initialize first tab active by default
-      if (buttons.length > 0) {
-        buttons[0].classList.add("border-blue-500", "font-semibold");
-        panels.forEach((p, i) => {
-          p.classList.toggle("hidden", i !== 0);
+  buttons.forEach(b => b.addEventListener('click', () => switchTab(b.dataset.tab!)));
+  if (window.innerWidth >= 768) switchTab('RAInfo');
+
+  /* ---------- MOBILE ACCORDION (< 768 px) ---------- */
+  document.querySelectorAll<HTMLDetailsElement>('#accordion details').forEach(details => {
+    details.addEventListener('toggle', () => {
+      if (details.open) {
+        document.querySelectorAll<HTMLDetailsElement>('#accordion details').forEach(d => {
+          if (d !== details) d.open = false;
         });
       }
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const target = btn.dataset.tab;
-
-          buttons.forEach((b) => {
-            b.classList.remove("border-blue-500", "font-semibold");
-            b.classList.add("border-transparent");
-          });
-          btn.classList.add("border-blue-500", "font-semibold");
-          btn.classList.remove("border-transparent");
-
-          panels.forEach((panel) => {
-            if (panel.id === target) {
-              panel.classList.remove("hidden");
-            } else {
-              panel.classList.add("hidden");
-            }
-          });
-        });
-      });
-    }
-
-    function activateAccordion() {
-      accordionHeaders.forEach((header) => {
-        header.addEventListener("click", () => {
-          const content = header.nextElementSibling as HTMLElement | null;
-          if (!content) return;
-
-          const isVisible = !content.classList.contains("hidden");
-
-          // Close all
-          document.querySelectorAll(".accordion-content").forEach((acc) => {
-            (acc as HTMLElement).classList.add("hidden");
-          });
-
-          // Toggle clicked
-          if (!isVisible) {
-            content.classList.remove("hidden");
-          }
-        });
-      });
-    }
-
-    // Apply behavior based on screen size
-    if (isMdUp()) {
-      activateTabs();
-    } else {
-      activateAccordion();
-    }
-
-    // Optional: Respond to resize (if you want to switch behavior dynamically)
-    window.addEventListener("resize", () => {
-      location.reload(); // Reload on resize breakpoint crossing for simplicity
     });
   });
+})();
 </script>
-
 </section>
 </BaseLayout>

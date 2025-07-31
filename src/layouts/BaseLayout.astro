@@ -73,7 +73,7 @@ const currentYear = new Date().getFullYear();
           <a href="/test/contact" class="hover:text-[#fabf0e]">Contact Us</a>
 
           <!-- Animated Apply Now CTA -->
-         <a href="/test/apply" class="relative inline-flex items-center justify-center px-5 py-2 text-white font-semibold rounded-full bg-[#f08024] shadow-lg hover:text-shadow-lg/50 text-shadow-black hover:scale-105 transition-all duration-300 ease-in-out">
+         <a href="/test/contact" class="relative inline-flex items-center justify-center px-5 py-2 text-white font-semibold rounded-full bg-[#f08024] shadow-lg hover:text-shadow-lg/50 text-shadow-black hover:scale-105 transition-all duration-300 ease-in-out">
   Apply Now
 </a>
         </nav>
@@ -99,7 +99,7 @@ const currentYear = new Date().getFullYear();
           <a href="/test/faqs" @click="open=false" class="hover:text-[#fabf0e]">FAQs</a>
           <a href="/test/contact" @click="open=false" class="hover:text-[#fabf0e]">Contact Us</a>
 
-          <a href="/test/apply" @click="open=false" class="relative inline-flex items-center justify-center px-5 py-2 text-white font-semibold rounded-full bg-[#f08024] shadow-md hover:text-shadow-lg/50 text-shadow-black hover:scale-105 transition-all duration-300 ease-in-out">
+          <a href="/test/contact" @click="open=false" class="relative inline-flex items-center justify-center px-5 py-2 text-white font-semibold rounded-full bg-[#f08024] shadow-md hover:text-shadow-lg/50 text-shadow-black hover:scale-105 transition-all duration-300 ease-in-out">
   Apply Now
 </a>
         </nav>
@@ -120,7 +120,7 @@ const currentYear = new Date().getFullYear();
               <img src={FooterLogo.src} alt="Footer Logo" class="h-auto w-auto" />
             </div>
             <div class="text-center md:text-left pt-5">
-              <div class="grid grid-cols-3 md:flex md:justify-start gap-x-4 gap-y-2 text-left">
+              <div class="grid grid-cols-2 md:flex md:justify-start gap-x-4 gap-y-2 text-left">
                 <a href="/test/about" class="hover:text-blue-400">&rarr; About Us</a>
                 <a href="/test/job" class="hover:text-blue-400">&rarr; Jobs</a>
                 <a href="/test/service" class="hover:text-blue-400">&rarr; Services</a>
@@ -131,19 +131,74 @@ const currentYear = new Date().getFullYear();
                 <a href="/test/privacy" class="hover:text-blue-400">&rarr; Privacy Policy</a>
               </div>
               <div class="flex justify-center mt-6">
-                <div class="flex items-center justify-center text-[#0077b5] border-2 border-[#0077b5] p-3 rounded-full transition-all duration-200 hover:bg-[#0077b5] hover:text-white">
-                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Visit our LinkedIn">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 24h5V7H0v17zM7.5 7h4.8v2.56h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.74c0-1.84-.03-4.2-2.55-4.2-2.56 0-2.95 2-2.95 4.06V24h-5V7z" />
-                    </svg>
-                  </a>
-                </div>
+               <!-- ===== ADD BELOW THE EXISTING LINKEDIN ICON ===== -->
+<div class="flex items-center justify-center gap-3 mt-6 text-gray-400">
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/profile.php?id=61575827112685"
+     target="_blank" rel="noopener noreferrer"
+     title="Facebook"
+     class="w-7 h-7 md:w-12 md:h-12 flex items-center justify-center rounded-full border-2 hover:bg-blue-600 hover:text-white border-gray-500 hover:border-blue-600 hover:text-blue-600 transition">
+    <svg class="w-4 h-4 md:w-6 md:h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/official_gdts/"
+     target="_blank" rel="noopener noreferrer"
+     title="Instagram"
+     class="w-7 h-7 md:w-12 md:h-12 flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-purple-500 hover:bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:text-white transition">
+    <svg class="w-4 h-4 md:w-6 md:h-6 fill-current" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11ZM18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5ZM14 13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13C10 11.8954 10.8954 11 12 11C13.1046 11 14 11.8954 14 13ZM16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13Z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.linkedin.com/company/global-dynamic-talent-solutions" 
+     target="_blank" rel="noopener noreferrer"
+     title="Visit our LinkedIn"
+     class="flex items-center justify-center w-7 h-7 md:w-12 md:h-12 border-2 border-gray-500 rounded-full transition-all duration-200 hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white">
+     <svg class="w-4 h-4 md:w-auto md:h-6 fill-current" viewBox="0 -0.5 20 25">
+      <path  d='M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z'/>
+    </svg>
+  </a>
+
+  <!-- X / Twitter -->
+  <a href="https://x.com/GDTS_Official"
+     target="_blank" rel="noopener noreferrer"
+     title="X (Twitter)"
+     class="w-7 h-7 md:w-12 md:h-12 flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-black hover:bg-black hover:text-white transition">
+    <svg class="w-4 h-4 md:w-6 md:h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@GlobalDynamicTalentSolutions"
+     target="_blank" rel="noopener noreferrer"
+     title="YouTube"
+     class="w-7 h-7 md:w-12 md:h-12 flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-red-600 hover:bg-red-600 hover:text-white transition">
+    <svg class="w-4 h-4 md:w-6 md:h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  </a>
+
+  <!-- Mail -->
+  <a href="mailto:info@gdtsolution.com"
+     title="Email us"
+     class="w-7 h-7 md:w-12 md:h-12 flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-green-600 hover:bg-green-600 hover:text-white transition">
+    <svg class="w-4 h-4 md:w-6 md:h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  </a>
+
+</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="bg-[#1b1a1a] text-[#d5d5d5] text-center p-4 text-sm">
+      <div class="bg-[#1b1a1a] text-[#d5d5d5] text-center p-4 text-xs md:text-sm">
         © {currentYear}. Global Dynamic Talent Solutions. All Rights Reserved
       </div>
     </footer>
